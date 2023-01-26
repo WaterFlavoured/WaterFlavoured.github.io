@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans:wght@300&family=Press+Start+2P&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="indexcss.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar1">
+        <h2><span id="red">Petro</span>Flavoured <span id="red">Canada</span></h2>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">References</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="introduction">
+        <h1>Welcome</h1>
+    </section>
+    <div id="textWall">
+        <h1>Fuel and Engine Systems</h1>
+        <p>The Modern World that we know is filled with multitudes of vehicles. What powers them is the fuel and engine. However as we know now that the fossil fuels used to power our vehicles are not very eco-friendly. </p>
+        <div class="vertical-center">
+            <button onclick="window.location.href = 'https://www.youtube.com/watch?v=ZQvfHyfgBtA';">Explore More</button>
+        </div>
+    </div>
+
+    <div id="textWithPic1">
+        <div id="blackbackground">
+            <h1>Fuel</h1>
+            <p>In terms of the common vehicles on the road, we either use gasoline or diesel. These two are the best in terms of the amount of energy in them. However they are very unclean and contribute to climate change and other unnatural occurences on earth</p>
+            <div class="vertical-center2">
+                <button onclick="window.location.href = 'gasoline.html';">Explore More</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="icons">
+        <div class="columns">
+            <a href="">
+                <img class='round' src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png" alt="">
+            </a>
+            <a href="">
+                <img class='round' src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png" alt="">
+            </a>
+            <a href="">
+                <img class='round' src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png" alt="">
+            </a>
+        </div>
+        <div class="columns">
+            <a href="">
+                <img class='round' src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png" alt="">
+            </a>
+            <a href="">
+                <img class='round' src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png" alt="">
+            </a>
+            <a href="">
+                <img class='round' src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <div id="copyright">
+        <p>©PotatoIndustry, INC 2023</p>
+    </div>
+    <script>
+        $(document).on("scroll", function() {
+            var pageTop = $(document).scrollTop();
+            var pageBottom = pageTop + $(window).height();
+            var tags = $(".tag");
+
+            for (var i = 0; i < tags.length; i++) {
+                var tag = tags[i];
+                if ($(tag).position().top < pageBottom) {
+                    $(tag).addClass("visible");
+                } else {
+                    $(tag).removeClass("visible");
+                }
+            }
+        });
+    </script>
+</body></html>
